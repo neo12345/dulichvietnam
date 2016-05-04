@@ -48,7 +48,45 @@ class tours extends CI_Controller {
 			$this->load->view('templates/footer');
         }
 
+        public function lists()
+        {
+			
+			$data['title'] = 'Danh sách tour du lịch';
+			
+			$num_tours = $this->tours_model->get_num_tours();
+			$perpage	= 5;  
 
+			$this->load->library('pagination'); 
+			
+			$config['total_rows'] = $num_tours; 
+			$config['per_page'] = $perpage; 
+			$config['next_link'] = 'Kế tiếp &gt;'; 
+			$config['prev_link'] = '&lt; Lùi lại'; 
+			$config['num_tag_open'] = '   '; 
+			$config['num_tag_close'] = '   '; 
+			$config['num_links']	= 5; 
+			$config['cur_tag_open'] = '<a class="currentpage">'; 
+			$config['cur_tag_close'] = '</a>'; 
+			$config['base_url'] = base_url().'index.php/tours/lists/';
+			$config['use_page_numbers']  = TRUE; 
+			$config['uri_segment']	= 3; 
+			
+			$this->pagination->initialize($config); 
+			
+			$pagination = $this->pagination->create_links(); 
+			 
+			$offset = ($this->uri->segment(3)=='') ? 1 : $this->uri->segment(3); 
+			
+			$data['toursList'] = $this->tours_model->get_tours_by_range($perpage, $offset); 
+			$data['pagination'] = $pagination;			
+			
+			
+			$this->load->view('templates/header');
+			$this->load->view('templates/leftsidebar');
+			$this->load->view('tours/lists', $data);
+			$this->load->view('templates/rightsidebar');
+			$this->load->view('templates/footer');
+        }
 
         public function view($id = NULL)
         {

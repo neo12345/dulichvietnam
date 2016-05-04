@@ -19,7 +19,11 @@
 	
 	<?php if($this->session->userdata['user']['type'] == 1)
 	{
-	?> 
+	?>
+        <li><a href="<?php echo base_url('index.php/news/lists');?>">Quản lí tin tức</a></li>
+        <li><a href="<?php echo base_url('index.php/posts/lists');?>">Quản lí bài viết</a></li>
+        <li><a href="<?php echo base_url('index.php/places/lists');?>">Quản lí địa điểm</a></li>
+        <li><a href="<?php echo base_url('index.php/tours/lists');?>">Quản lí tour</a></li>
 	<li><a href="<?php echo base_url('index.php/accounts/index');?>">Quản lí tài khoản</a></li>
 	<li><a href="<?php echo base_url('index.php/ranges/index');?>">Quản lí các khoảng giá trị</a></li>
 	<li><a href="<?php echo base_url('index.php/banners/lists');?>">Quản lí các banner</a></li>
