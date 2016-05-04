@@ -155,90 +155,90 @@ class placeVector extends CI_Controller {
 			}
 			
 			
-			if($place['nature'] == 'Khong co')
+			if($place['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($place['nature'] == 'It')
+				if($place['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($place['nature'] == 'Tuong doi')
+				if($place['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($place['nature'] == 'Kha nhieu')
+				if($place['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($place['nature'] == 'Rat nhieu')
+				if($place['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($place['adventure'] == 'Khong co')
+				if($place['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($place['adventure'] == 'It')
+				if($place['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($place['adventure'] == 'Tuong doi')
+				if($place['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($place['adventure'] == 'Kha nhieu')
+				if($place['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($place['adventure'] == 'Rat nhieu')
+				if($place['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($place['religious'] == 'Khong co')
+				if($place['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($place['religious'] == 'It')
+				if($place['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($place['religious'] == 'Tuong doi')
+				if($place['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($place['religious'] == 'Kha nhieu')
+				if($place['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($place['religious'] == 'Rat nhieu')
+				if($place['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($place['health_or_medical'] == 'Khong co')
+				if($place['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($place['health_or_medical'] == 'It')
+				if($place['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($place['health_or_medical'] == 'Tuong doi')
+				if($place['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($place['health_or_medical'] == 'Kha nhieu')
+				if($place['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($place['health_or_medical'] == 'Rat nhieu')
+				if($place['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}
@@ -406,90 +406,90 @@ class placeVector extends CI_Controller {
 			}
 			
 			
-			if($place['nature'] == 'Khong co')
+			if($place['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($place['nature'] == 'It')
+				if($place['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($place['nature'] == 'Tuong doi')
+				if($place['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($place['nature'] == 'Kha nhieu')
+				if($place['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($place['nature'] == 'Rat nhieu')
+				if($place['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($place['adventure'] == 'Khong co')
+				if($place['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($place['adventure'] == 'It')
+				if($place['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($place['adventure'] == 'Tuong doi')
+				if($place['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($place['adventure'] == 'Kha nhieu')
+				if($place['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($place['adventure'] == 'Rat nhieu')
+				if($place['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($place['religious'] == 'Khong co')
+				if($place['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($place['religious'] == 'It')
+				if($place['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($place['religious'] == 'Tuong doi')
+				if($place['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($place['religious'] == 'Kha nhieu')
+				if($place['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($place['religious'] == 'Rat nhieu')
+				if($place['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($place['health_or_medical'] == 'Khong co')
+				if($place['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($place['health_or_medical'] == 'It')
+				if($place['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($place['health_or_medical'] == 'Tuong doi')
+				if($place['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($place['health_or_medical'] == 'Kha nhieu')
+				if($place['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($place['health_or_medical'] == 'Rat nhieu')
+				if($place['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}
@@ -664,90 +664,90 @@ class placeVector extends CI_Controller {
 			}
 			
 			
-			if($place['nature'] == 'Khong co')
+			if($place['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($place['nature'] == 'It')
+				if($place['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($place['nature'] == 'Tuong doi')
+				if($place['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($place['nature'] == 'Kha nhieu')
+				if($place['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($place['nature'] == 'Rat nhieu')
+				if($place['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($place['adventure'] == 'Khong co')
+				if($place['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($place['adventure'] == 'It')
+				if($place['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($place['adventure'] == 'Tuong doi')
+				if($place['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($place['adventure'] == 'Kha nhieu')
+				if($place['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($place['adventure'] == 'Rat nhieu')
+				if($place['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($place['religious'] == 'Khong co')
+				if($place['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($place['religious'] == 'It')
+				if($place['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($place['religious'] == 'Tuong doi')
+				if($place['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($place['religious'] == 'Kha nhieu')
+				if($place['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($place['religious'] == 'Rat nhieu')
+				if($place['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($place['health_or_medical'] == 'Khong co')
+				if($place['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($place['health_or_medical'] == 'It')
+				if($place['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($place['health_or_medical'] == 'Tuong doi')
+				if($place['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($place['health_or_medical'] == 'Kha nhieu')
+				if($place['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($place['health_or_medical'] == 'Rat nhieu')
+				if($place['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}

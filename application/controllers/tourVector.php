@@ -155,90 +155,90 @@ class tourVector extends CI_Controller {
 			}
 			
 			
-			if($tour['nature'] == 'Khong co')
+			if($tour['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($tour['nature'] == 'It')
+				if($tour['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($tour['nature'] == 'Tuong doi')
+				if($tour['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($tour['nature'] == 'Kha nhieu')
+				if($tour['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($tour['nature'] == 'Rat nhieu')
+				if($tour['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($tour['adventure'] == 'Khong co')
+				if($tour['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($tour['adventure'] == 'It')
+				if($tour['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($tour['adventure'] == 'Tuong doi')
+				if($tour['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($tour['adventure'] == 'Kha nhieu')
+				if($tour['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($tour['adventure'] == 'Rat nhieu')
+				if($tour['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($tour['religious'] == 'Khong co')
+				if($tour['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($tour['religious'] == 'It')
+				if($tour['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($tour['religious'] == 'Tuong doi')
+				if($tour['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($tour['religious'] == 'Kha nhieu')
+				if($tour['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($tour['religious'] == 'Rat nhieu')
+				if($tour['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($tour['health_or_medical'] == 'Khong co')
+				if($tour['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($tour['health_or_medical'] == 'It')
+				if($tour['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($tour['health_or_medical'] == 'Tuong doi')
+				if($tour['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($tour['health_or_medical'] == 'Kha nhieu')
+				if($tour['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($tour['health_or_medical'] == 'Rat nhieu')
+				if($tour['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}
@@ -406,90 +406,90 @@ class tourVector extends CI_Controller {
 			}
 			
 			
-			if($tour['nature'] == 'Khong co')
+			if($tour['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($tour['nature'] == 'It')
+				if($tour['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($tour['nature'] == 'Tuong doi')
+				if($tour['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($tour['nature'] == 'Kha nhieu')
+				if($tour['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($tour['nature'] == 'Rat nhieu')
+				if($tour['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($tour['adventure'] == 'Khong co')
+				if($tour['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($tour['adventure'] == 'It')
+				if($tour['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($tour['adventure'] == 'Tuong doi')
+				if($tour['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($tour['adventure'] == 'Kha nhieu')
+				if($tour['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($tour['adventure'] == 'Rat nhieu')
+				if($tour['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($tour['religious'] == 'Khong co')
+				if($tour['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($tour['religious'] == 'It')
+				if($tour['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($tour['religious'] == 'Tuong doi')
+				if($tour['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($tour['religious'] == 'Kha nhieu')
+				if($tour['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($tour['religious'] == 'Rat nhieu')
+				if($tour['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($tour['health_or_medical'] == 'Khong co')
+				if($tour['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($tour['health_or_medical'] == 'It')
+				if($tour['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($tour['health_or_medical'] == 'Tuong doi')
+				if($tour['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($tour['health_or_medical'] == 'Kha nhieu')
+				if($tour['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($tour['health_or_medical'] == 'Rat nhieu')
+				if($tour['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}
@@ -664,90 +664,90 @@ class tourVector extends CI_Controller {
 			}
 			
 			
-			if($tour['nature'] == 'Khong co')
+			if($tour['nature'] == 'Không có')
 				{
 					$nature = -1;
 				}
-				if($tour['nature'] == 'It')
+				if($tour['nature'] == 'Khá ít')
 				{
 					$nature = -0.5;
 				}
-				if($tour['nature'] == 'Tuong doi')
+				if($tour['nature'] == 'Tương đối')
 				{
 					$nature = 0;
 				}
-				if($tour['nature'] == 'Kha nhieu')
+				if($tour['nature'] == 'Khá nhiều')
 				{
 					$nature = 0.5;
 				}
-				if($tour['nature'] == 'Rat nhieu')
+				if($tour['nature'] == 'Rất nhiều')
 				{
 					$nature = 1;
 				}
 				
 				
 				
-				if($tour['adventure'] == 'Khong co')
+				if($tour['adventure'] == 'Không có')
 				{
 					$adventure = -1;
 				}
-				if($tour['adventure'] == 'It')
+				if($tour['adventure'] == 'Khá ít')
 				{
 					$adventure = -0.5;
 				}
-				if($tour['adventure'] == 'Tuong doi')
+				if($tour['adventure'] == 'Tương đối')
 				{
 					$adventure = 0;
 				}
-				if($tour['adventure'] == 'Kha nhieu')
+				if($tour['adventure'] == 'Khá nhiều')
 				{
 					$adventure = 0.5;
 				}
-				if($tour['adventure'] == 'Rat nhieu')
+				if($tour['adventure'] == 'Rất nhiều')
 				{
 					$adventure = 1;
 				}
 				
 				
-				if($tour['religious'] == 'Khong co')
+				if($tour['religious'] == 'Không có')
 				{
 					$religious = -1;
 				}
-				if($tour['religious'] == 'It')
+				if($tour['religious'] == 'Khá ít')
 				{
 					$religious = -0.5;
 				}
-				if($tour['religious'] == 'Tuong doi')
+				if($tour['religious'] == 'Tương đối')
 				{
 					$religious = 0;
 				}
-				if($tour['religious'] == 'Kha nhieu')
+				if($tour['religious'] == 'Khá nhiều')
 				{
 					$religious = 0.5;
 				}
-				if($tour['religious'] == 'Rat nhieu')
+				if($tour['religious'] == 'Rất nhiều')
 				{
 					$religious = 1;
 				}
 				
 				
-				if($tour['health_or_medical'] == 'Khong co')
+				if($tour['health_or_medical'] == 'Không có')
 				{
 					$health_or_medical = -1;
 				}
-				if($tour['health_or_medical'] == 'It')
+				if($tour['health_or_medical'] == 'Khá ít')
 				{
 					$health_or_medical = -0.5;
 				}
-				if($tour['health_or_medical'] == 'Tuong doi')
+				if($tour['health_or_medical'] == 'Tương đối')
 				{
 					$health_or_medical = 0;
 				}
-				if($tour['health_or_medical'] == 'Kha nhieu')
+				if($tour['health_or_medical'] == 'Khá nhiều')
 				{
 					$health_or_medical = 0.5;
 				}
-				if($tour['health_or_medical'] == 'Rat nhieu')
+				if($tour['health_or_medical'] == 'Rất nhiều')
 				{
 					$health_or_medical = 1;
 				}
