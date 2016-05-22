@@ -55,11 +55,11 @@
 						 </nav>
 						 <div class="collapse navbar-collapse" id="myNavbar">
 							<ul class="nav navbar-nav">
-							  <li class="active"><a href="<?php echo base_url();?>">Trang chủ</a></li>
-							  <li><a href="<?php echo base_url('index.php/news/index');?>">Tin tức du lịch</a></li>
-							  <li><a href="<?php echo base_url('index.php/posts/index');?>">Bài viết du lịch</a></li> 
-							  <li><a href="<?php echo base_url('index.php/places/index');?>">Địa điểm du lịch</a></li> 
-							  <li><a href="<?php echo base_url('index.php/tours/index');?>">Tour du lịch</a></li>						  
+                              <li <?php if($this->uri->segment(1) == '') { echo 'class="active"'; } ?>><a href="<?php echo base_url();?>">Trang chủ</a></li>
+							  <li <?php if($this->uri->segment(1) == 'news') { echo 'class="active"'; } ?>><a href="<?php echo base_url('index.php/news/index');?>">Tin tức du lịch</a></li>
+							  <li <?php if($this->uri->segment(1) == 'posts') { echo 'class="active"'; } ?>><a href="<?php echo base_url('index.php/posts/index');?>">Bài viết du lịch</a></li> 
+							  <li <?php if($this->uri->segment(1) == 'places') { echo 'class="active"'; } ?>><a href="<?php echo base_url('index.php/places/index');?>">Địa điểm du lịch</a></li> 
+							  <li <?php if($this->uri->segment(1) == 'tours') { echo 'class="active"'; } ?>><a href="<?php echo base_url('index.php/tours/index');?>">Tour du lịch</a></li>						  
 							</ul>
 							
 							<ul class="nav navbar-nav navbar-right">
