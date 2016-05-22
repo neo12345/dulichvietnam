@@ -50,6 +50,11 @@ class tours extends CI_Controller {
 
         public function lists()
         {
+			if ($this->session->userdata['user']['type'] != 1)
+			{
+				redirect('welcome', 'refresh');
+			}
+			
 			
 			$data['title'] = 'Danh sách tour du lịch';
 			

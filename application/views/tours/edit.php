@@ -1,7 +1,12 @@
 <div class="col-lg-7 col-md-7 col-xs-8">	
 	<h2><?php echo $title; ?></h2>
 	
+	<?php if(validation_errors())
+	{ ?>
+	<div class="alert alert-danger fade in">
 	<?php echo validation_errors(); ?>
+	</div>
+	<?php } ?>
 	
 	<?php echo form_open('tours/edit'); ?>
 	<div class="form-group">

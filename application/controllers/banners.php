@@ -57,6 +57,10 @@ class banners extends CI_Controller {
 			else
 			{
 				$this->banners_model->set_banner();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('banners/lists', 'refresh');
 			}
 		
@@ -86,6 +90,10 @@ class banners extends CI_Controller {
 			else
 			{
 				$this->banners_model->edit_banner();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('banners/lists', 'refresh');
 			}
 			
@@ -94,6 +102,10 @@ class banners extends CI_Controller {
 		public function delete($id = NULL)
 		{
 			$this->banners_model->delete_banner($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+			$this->session->keep_flashdata('message');
+			
 			redirect('banners/lists', 'refresh');
 		}
 		

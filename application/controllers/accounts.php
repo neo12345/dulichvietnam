@@ -111,6 +111,10 @@ class Accounts extends CI_Controller {
 			else
 			{
 				$this->accounts_model->edit_account();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('accounts/view/'.$this->input->post('id'), 'refresh');
 			}
 			
@@ -123,7 +127,12 @@ class Accounts extends CI_Controller {
 				{
 					redirect('welcome', 'refresh');
 				}
+				
 			$this->accounts_model->delete_account($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+			$this->session->keep_flashdata('message');
+				
 			redirect('accounts/index', 'refresh');
 		}
 }

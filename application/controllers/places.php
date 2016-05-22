@@ -49,6 +49,12 @@ class Places extends CI_Controller {
 
         public function lists()
         {
+				if ($this->session->userdata['user']['type'] != 1)
+			{
+				redirect('welcome', 'refresh');
+			}
+				
+				
 				$data['title'] = 'Danh sách địa điểm du lịch';
 				
 				$num_places = $this->places_model->get_num_places();
@@ -189,6 +195,7 @@ class Places extends CI_Controller {
 			{
 				$this->places_model->edit_place();
 				$id = $this->input->post('id');
+				
 				redirect('placevector/edit/'.$id, 'refresh');
 			}
 			
@@ -203,6 +210,7 @@ class Places extends CI_Controller {
 			}
 			
 			$this->places_model->delete_place($id);
+			
 			redirect('placevector/delete/'.$id, 'refresh');
 		}
 }

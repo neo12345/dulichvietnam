@@ -49,6 +49,11 @@ class News extends CI_Controller {
 
         public function lists()
         {
+				if ($this->session->userdata['user']['type'] != 1)
+			{
+				redirect('welcome', 'refresh');
+			}
+				
 				$data['title'] = 'Danh sách tin tức';
 				
 				$num_news = $this->news_model->get_num_news();
@@ -132,6 +137,10 @@ class News extends CI_Controller {
 			else
 			{
 				$this->news_model->set_news();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('news/index', 'refresh');
 			}
 		}
@@ -164,6 +173,10 @@ class News extends CI_Controller {
 			else
 			{
 				$this->news_model->edit_news();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('news/index', 'refresh');
 			}
 			
@@ -178,6 +191,10 @@ class News extends CI_Controller {
 			}
 			
 			$this->news_model->delete_news($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('news/index', 'refresh');
 		}
 }

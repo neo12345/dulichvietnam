@@ -49,6 +49,11 @@ class posts extends CI_Controller {
 
         public function lists()
         {
+				if ($this->session->userdata['user']['type'] != 1)
+			{
+				redirect('welcome', 'refresh');
+			}
+		
 				$data['title'] = 'Danh sách bài viết';
 				
 				$num_posts = $this->posts_model->get_num_posts();
@@ -132,6 +137,10 @@ class posts extends CI_Controller {
 			else
 			{
 				$this->posts_model->set_posts();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('posts/index', 'refresh');
 			}
 		}
@@ -164,6 +173,10 @@ class posts extends CI_Controller {
 			else
 			{
 				$this->posts_model->edit_posts();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('posts/index', 'refresh');
 			}
 			
@@ -178,6 +191,10 @@ class posts extends CI_Controller {
 			}
 			
 			$this->posts_model->delete_posts($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('posts/index', 'refresh');
 		}
 }

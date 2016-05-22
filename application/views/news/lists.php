@@ -1,6 +1,10 @@
 <div class="col-lg-7 col-md-7 col-xs-8">
 	<h2><?php echo $title; ?></h2>
 	
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="<?php echo base_url('index.php/news/create');?>">Tạo tin mới</a></li>
+	</ul>
+	
 	<table class="table table-hover">
 	<thead>
 		<tr>

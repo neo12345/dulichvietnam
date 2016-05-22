@@ -86,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			echo '<div class="jumbotron">';
 			echo '<table>';
 			echo '<td width="200px">';
-			echo '<img src="'.$post['feature_img'].'" width="200px"/>';
+			echo '<img src="'.$tour['feature_img'].'" width="200px"/>';
 			echo '</td>';
 			echo '<td>';
 			echo '<div style="padding: 20px">';

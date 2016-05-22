@@ -258,6 +258,10 @@ class placeVector extends CI_Controller {
 			);
 			
 			$this->placeVector_model->set_placeVector($data);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+			$this->session->keep_flashdata('message');
+			
 			redirect('places/view/'.$id, 'refresh');
 		}
 		
@@ -509,6 +513,10 @@ class placeVector extends CI_Controller {
 			);
 								
 			$this->placeVector_model->edit_placeVector($data);	
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('places/view/'.$id, 'refresh');		
 		}
 		
@@ -516,6 +524,10 @@ class placeVector extends CI_Controller {
 		public function delete($id = NULL)
 		{
 			$this->placeVector_model->delete_placeVector($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('places/index', 'refresh');
 		}
 		

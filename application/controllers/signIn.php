@@ -70,6 +70,10 @@ class Signin extends CI_Controller {
 						}
 						$this->session->set_userdata('user', $row); 
 					}
+					
+					$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+					
 					redirect('welcome', 'refresh');
 				}
 				else

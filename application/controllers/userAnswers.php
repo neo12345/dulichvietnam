@@ -57,7 +57,11 @@ class useranswers extends CI_Controller {
 			}
 			else
 			{ 
-				$this->useranswers_model->set_useranswers();				
+				$this->useranswers_model->set_useranswers();	
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+							
 				redirect('welcome', 'refresh');
 			}
         }
@@ -111,6 +115,10 @@ class useranswers extends CI_Controller {
 			else
 			{
 				$this->useranswers_model->edit_useranswers();
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('welcome', 'refresh');
 			}
 			
@@ -124,6 +132,10 @@ class useranswers extends CI_Controller {
 			}
 			
 			$this->useranswers_model->delete_useranswers($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('welcome', 'refresh');
 		}
 }

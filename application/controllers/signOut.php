@@ -14,6 +14,9 @@ class Signout extends CI_Controller {
 				set_cookie($cookiename, "", time() -3600); 
 				delete_cookie('DLVNAuth');
 				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect ('welcome', 'refresh');
 				/*
 				$data['title'] = 'Sign out';

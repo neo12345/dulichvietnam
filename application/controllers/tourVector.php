@@ -258,6 +258,10 @@ class tourVector extends CI_Controller {
 			);
 			
 			$this->tourVector_model->set_tourVector($data);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('tours/view/'.$id, 'refresh');
 		}
 		
@@ -508,7 +512,11 @@ class tourVector extends CI_Controller {
 				'health_or_medical' => $health_or_medical
 			);
 								
-			$this->tourVector_model->edit_tourVector($data);	
+			$this->tourVector_model->edit_tourVector($data);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 			redirect('tours/view/'.$id, 'refresh');		
 		}
 		
@@ -516,6 +524,10 @@ class tourVector extends CI_Controller {
 		public function delete($id = NULL)
 		{
 			$this->tourVector_model->delete_tourVector($id);
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+			
 			redirect('tours/index', 'refresh');
 		}
 		
@@ -767,7 +779,11 @@ class tourVector extends CI_Controller {
 			);
 									
 				$this->tourVector_model->edit_tourVector($data);
-			}	
+			}
+			
+			$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+			$this->session->keep_flashdata('message');
+				
 			redirect('ranges/index', 'refresh');		
 		}
 		

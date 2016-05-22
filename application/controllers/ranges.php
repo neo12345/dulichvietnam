@@ -57,6 +57,10 @@ class ranges extends CI_Controller {
 			else
 			{
 				$this->ranges_model->set_range($name);
+				
+				$this->session->set_flashdata('message', 'Bạn đã thực hiện thành công');
+				$this->session->keep_flashdata('message');
+				
 				redirect('placevector/editAll', 'refresh');
 			}
 			

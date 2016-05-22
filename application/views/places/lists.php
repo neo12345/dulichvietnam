@@ -1,6 +1,15 @@
 <div class="col-lg-7 col-md-7 col-xs-8">
 	<h2><?php echo $title; ?></h2>
 	
+	<?php 
+	if ($this->session->userdata['user']['type'] == 1)
+	{
+	?>
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="<?php echo base_url('index.php/places/create');?>">Tạo địa điểm du lịch mới</a></li>
+	</ul>	
+	<?php }?>
+	
 	<table class="table table-hover">
 	<thead>
 		<tr>
